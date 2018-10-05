@@ -73,6 +73,19 @@ userInput.prototype.calculateRemaining = function () {
   this.jupiterRemain = this.jupiterConvert(this.earthRemain);
 };
 
+userInput.prototype.outputMaker = function () {
+  this.output = '<p>You can expect to live '+
+    this.earthRemain +
+    ' more Earth years, ' +
+    this.mercuryRemain +
+    ' more Mercury years, ' +
+    this.venusRemain +
+    ' more Venus years, and ' +
+    this.jupiterRemain +
+    ' more Jupiter years. Good luck!'
+  '</p>'
+}
+
 
 //front end
 $(document).ready(function() {
@@ -88,6 +101,8 @@ $(document).ready(function() {
     testAge.calculateAges();
     testAge.calculateExpectancy();
     testAge.calculateRemaining();
-    $(".output").html(testAge.earthAge);
+    testAge.outputMaker();
+    $(".output").toggle();
+    $(".output").html(testAge.output);
   });
 });
