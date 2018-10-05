@@ -52,7 +52,31 @@ describe('userInput', function() {
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
-    expect(test.mercuryRemain).toEqual(212.5);
+    expect(test.mercuryRemain).toEqual('212.50');
+  });
+
+  it('should return life expectancy in venus years', function() {
+    var test = new userInput(33, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.venusRemain).toEqual('82.26');
+  });
+
+  it('should return life expectancy in mars years', function() {
+    var test = new userInput(33, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.marsRemain).toEqual('27.13');
+  });
+
+  it('should return life expectancy in jupiter years', function() {
+    var test = new userInput(33, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.jupiterRemain).toEqual('4.30');
   });
 
 });
