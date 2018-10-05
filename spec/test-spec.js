@@ -79,6 +79,22 @@ describe('userInput', function() {
     expect(test.jupiterRemain).toEqual('4.30');
   });
 
+  it('if user age exceeds expectancy, program returns number of Earth years they have lived past life expectancy', function() {
+    var test = new userInput(100, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.earthOver).toEqual('16.00');
+  });
+
+  it('if user age exceeds expectancy, program returns number of mercury years they have lived past life expectancy', function() {
+    var test = new userInput(100, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.mercuryOver).toEqual('66.67');
+  });
+
 });
 
 
