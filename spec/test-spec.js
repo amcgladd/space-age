@@ -103,6 +103,14 @@ describe('userInput', function() {
     expect(test.venusOver).toEqual('25.81');
   });
 
+  it('if user age exceeds expectancy, program returns number of mars years they have lived past life expectancy', function() {
+    var test = new userInput(100, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.marsOver).toEqual('8.51');
+  });
+
 });
 
 
