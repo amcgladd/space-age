@@ -81,8 +81,9 @@ $(document).ready(function() {
     let userAge = parseInt($("#userAge").val());
     let userGender = $("#userGender input:radio:checked").val();
     let userSmoke = $("#userSmoke input:radio:checked").val();
+    let userExercise = $("#userExercise input:radio:checked").val();
     console.log(userGender);
-    let testAge = new userInput(userAge,userGender,userSmoke,true);
+    let testAge = new userInput(userAge,userGender,userSmoke,userExercise);
     console.log(testAge);
     testAge.calculateAges();
     testAge.calculateExpectancy();
