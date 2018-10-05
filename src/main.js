@@ -78,9 +78,10 @@ userInput.prototype.calculateRemaining = function () {
 $(document).ready(function() {
   $("#userInput").submit(function(event) {
     event.preventDefault();
-    var userAge = parseInt($("#userAge").val());
-    console.log(userAge);
-    var testAge = new userInput(userAge,'male',false,true);
+    let userAge = parseInt($("#userAge").val());
+    let userGender = $("#userGender input:radio:checked").val();
+    console.log(userGender);
+    let testAge = new userInput(userAge,userGender,false,true);
     console.log(testAge);
     testAge.calculateAges();
     testAge.calculateExpectancy();
