@@ -95,6 +95,14 @@ describe('userInput', function() {
     expect(test.mercuryOver).toEqual('66.67');
   });
 
+  it('if user age exceeds expectancy, program returns number of Venus years they have lived past life expectancy', function() {
+    var test = new userInput(100, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.venusOver).toEqual('25.81');
+  });
+
 });
 
 
