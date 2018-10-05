@@ -5,16 +5,25 @@ describe('userInput', function() {
 
   it('should test if userInput is an integer', function() {
     var test = new userInput("apple");
-    test.calculateEarthAge("apple");
+    test.calculateAges("apple");
     expect(test.age).toEqual('false');
   });
 
-  it('should return age', function() {
+  it('should return Earth age', function() {
     var test = new userInput(33);
-    test.calculateEarthAge(33);
+    test.calculateAges(33);
     expect(test.earthAge).toEqual(33);
   });
+
+  it('should return Mercury age', function() {
+    var test = new userInput(33);
+    test.calculateAges(33);
+    expect(test.mercuryAge).toEqual(137.5);
+  });
+
 });
+
+
 
 
 // expect(triangle.side1).toEqual(3);
