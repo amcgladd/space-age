@@ -43,8 +43,18 @@ describe('userInput', function() {
     var test = new userInput(33, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
-    expect(test.earthExpect - test.earthAge).toEqual(51);
+    test.calculateRemaining();
+    expect(test.earthRemain).toEqual(51);
   });
+
+  it('should return life expectancy in mercury years', function() {
+    var test = new userInput(33, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.mercuryRemain).toEqual(212.5);
+  });
+
 });
 
 
