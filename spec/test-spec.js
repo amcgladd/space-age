@@ -18,7 +18,19 @@ describe('userInput', function() {
   it('should return Mercury age', function() {
     var test = new userInput(33);
     test.calculateAges(33);
-    expect(test.mercuryAge).toEqual(137.5);
+    expect(test.mercuryAge).toEqual('137.50');
+  });
+
+  it('should return Venus age', function() {
+    var test = new userInput(33);
+    test.calculateAges(33);
+    expect(test.venusAge).toEqual('53.23');
+  });
+
+  it('should return Venus age', function() {
+    var test = new userInput(33);
+    test.calculateAges(33);
+    expect(test.marsAge).toEqual('17.55');
   });
 
 });
