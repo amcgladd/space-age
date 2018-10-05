@@ -5,7 +5,8 @@ describe('userInput', function() {
 
   it('should test if userInput is an integer', function() {
     var test = new userInput("apple");
-    expect(typeof test.earthAge).toEqual('number');
+    test.ageValidate("apple");
+    expect(test.earthAge).toEqual('false');
   });
 });
 
@@ -13,3 +14,4 @@ describe('userInput', function() {
 // expect(triangle.side1).toEqual(3);
 // expect(triangle.side2).toEqual(4);
 // expect(triangle.side3).not.toEqual(6);
+// expect(typeof test.earthAge).toEqual('number');
