@@ -21,8 +21,8 @@ This program calculates a user's age on various neighboring planets. It also ret
   * Example output: 33 earth years
 
 *  3) The program returns age in Mercury years.
-  * Example input: 33
-  * Example output: 137.50 Mercury years
+    * Example input: 33
+    * Example output: 137.50 Mercury years
 
 * 4) The program returns age in Venus years.
   * Example input: 33
