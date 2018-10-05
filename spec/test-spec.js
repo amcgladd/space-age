@@ -4,43 +4,43 @@ import {userInput} from "./../src/main.js";
 describe('userInput', function() {
 
   it('should test if userInput is an integer', function() {
-    var test = new userInput("apple");
+    let test = new userInput("apple");
     test.calculateAges("apple");
     expect(test.age).toEqual('false');
   });
 
   it('should return Earth age', function() {
-    var test = new userInput(33);
+    let test = new userInput(33);
     test.calculateAges(33);
     expect(test.earthAge).toEqual(33);
   });
 
   it('should return Mercury age', function() {
-    var test = new userInput(33);
+    let test = new userInput(33);
     test.calculateAges(33);
     expect(test.mercuryAge).toEqual('137.50');
   });
 
   it('should return Venus age', function() {
-    var test = new userInput(33);
+    let test = new userInput(33);
     test.calculateAges();
     expect(test.venusAge).toEqual('53.23');
   });
 
   it('should return Mars age', function() {
-    var test = new userInput(33);
+    let test = new userInput(33);
     test.calculateAges();
     expect(test.marsAge).toEqual('17.55');
   });
 
   it('should return Jupiter age', function() {
-    var test = new userInput(33);
+    let test = new userInput(33);
     test.calculateAges();
     expect(test.jupiterAge).toEqual('2.78');
   });
 
   it('should return life expectancy in earth years', function() {
-    var test = new userInput(33, 'female', false, true);
+    let test = new userInput(33, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -48,7 +48,7 @@ describe('userInput', function() {
   });
 
   it('should return life expectancy in mercury years', function() {
-    var test = new userInput(33, 'female', false, true);
+    let test = new userInput(33, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -56,7 +56,7 @@ describe('userInput', function() {
   });
 
   it('should return life expectancy in venus years', function() {
-    var test = new userInput(33, 'female', false, true);
+    let test = new userInput(33, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -64,7 +64,7 @@ describe('userInput', function() {
   });
 
   it('should return life expectancy in mars years', function() {
-    var test = new userInput(33, 'female', false, true);
+    let test = new userInput(33, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -72,7 +72,7 @@ describe('userInput', function() {
   });
 
   it('should return life expectancy in jupiter years', function() {
-    var test = new userInput(33, 'female', false, true);
+    let test = new userInput(33, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -80,7 +80,7 @@ describe('userInput', function() {
   });
 
   it('if user age exceeds expectancy, program returns number of Earth years they have lived past life expectancy', function() {
-    var test = new userInput(100, 'female', false, true);
+    let test = new userInput(100, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -88,7 +88,7 @@ describe('userInput', function() {
   });
 
   it('if user age exceeds expectancy, program returns number of mercury years they have lived past life expectancy', function() {
-    var test = new userInput(100, 'female', false, true);
+    let test = new userInput(100, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -96,7 +96,7 @@ describe('userInput', function() {
   });
 
   it('if user age exceeds expectancy, program returns number of Venus years they have lived past life expectancy', function() {
-    var test = new userInput(100, 'female', false, true);
+    let test = new userInput(100, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -104,7 +104,7 @@ describe('userInput', function() {
   });
 
   it('if user age exceeds expectancy, program returns number of mars years they have lived past life expectancy', function() {
-    var test = new userInput(100, 'female', false, true);
+    let test = new userInput(100, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -112,7 +112,7 @@ describe('userInput', function() {
   });
 
   it('if user age exceeds expectancy, program returns number of jupiter years they have lived past life expectancy', function() {
-    var test = new userInput(100, 'female', false, true);
+    let test = new userInput(100, 'female', false, true);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();
@@ -120,7 +120,7 @@ describe('userInput', function() {
   });
 
   it('test another case for 33 yr old male', function() {
-    var test = new userInput(33, 'male', true, false);
+    let test = new userInput(33, 'male', true, false);
     test.calculateAges();
     test.calculateExpectancy();
     test.calculateRemaining();

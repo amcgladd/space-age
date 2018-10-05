@@ -13,19 +13,19 @@ export function userInput(age, gender, smoking, exercise) {
 
 userInput.prototype.mercuryConvert = function(earthValue) {
   return (earthValue / .24).toFixed(2);
-}
+};
 
 userInput.prototype.venusConvert = function(earthValue) {
   return (earthValue / .62).toFixed(2);
-}
+};
 
 userInput.prototype.marsConvert = function(earthValue) {
   return (earthValue / 1.88).toFixed(2);
-}
+};
 
 userInput.prototype.jupiterConvert = function(earthValue) {
   return (earthValue / 11.86).toFixed(2);
-}
+};
 
 userInput.prototype.calculateAges = function() {
   if(typeof this.age == 'number') {
@@ -56,7 +56,7 @@ userInput.prototype.calculateExpectancy = function () {
   if (this.exercise == true) {
     this.earthExpect += 5;
   }
-}
+};
 
 userInput.prototype.calculateRemaining = function () {
   if (this.earthAge > this.earthExpect) {
@@ -71,9 +71,18 @@ userInput.prototype.calculateRemaining = function () {
   this.venusRemain = this.venusConvert(this.earthRemain);
   this.marsRemain = this.marsConvert(this.earthRemain);
   this.jupiterRemain = this.jupiterConvert(this.earthRemain);
-}
+};
 
 
 //front end
 $(document).ready(function() {
+  $("#submit").submit(function(event) {
+    event.preventDefault();
+    let userAge = ("#userAge").val();
+    console.log(userAge);
+    let testAge = new userInput(userAge,'male',false,false);
+    console.log(testAge);
+    testAge.calculateAges();
+    $(".output").html(testAge.earthAge);
+  });
 });
