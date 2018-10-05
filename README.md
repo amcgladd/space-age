@@ -15,69 +15,64 @@
   * Example output: apple
 
 * The program returns age in earth years based on input.
-  * Example input: February 12, 1985
-  * Example output: 33.6 earth years
+  * Example input: 33
+  * Example output: 33 earth years
 
 * The program returns age in Mercury years.
-  * Example input: February 12, 1985
-  * Example output: 139.6 mercury years
+  * Example input: 33
+  * Example output: 137.5 Mercury years
 
 * The program returns age in Venus years.
-  * Example input: February 12, 1985
-  * Example output: 54.6 Venus years
+  * Example input: 33
+  * Example output: 53.23 Venus years
 
 * The program returns age in Mars years.
-    * Example input: February 12, 1985
-    * Example output: 17.8 Mars years
+    * Example input: 33
+    * Example output: 17.5 Mars years
 
 * The program returns age in Jupiter years.
-  * Example input: February 12, 1985
-  * Example output: 2.83 Jupiter years
-
-
-
+  * Example input: 33
+  * Example output: 2.78 Jupiter years
 
 * The program returns how many years a user has to live in earth years.
-  * Example input: born February 12, 1985 / female / no smoke / exercise
-  * Example output: 50.4 earth years remaining
+  * Example input: 33 earth years old / female / no smoke / exercise
+  * Example output: 51 earth years remaining
 
 * The program returns how many years a user has to live in mercury years.
-  * Example input: born February 12, 1985 / female / no smoke / exercise
-  * Example output: 121.46 Mercury years
-
+  * Example input: 33 earth years old / female / no smoke / exercise
+  * Example output: 212.5 Mercury years
 
 * The program returns how many years a user has to live in Venus years.
-  * Example input: born February 12, 1985 / female / no smoke / exercise
-  * Example output: 31.248 Venus years
+  * Example input: 33 earth years old / female / no smoke / exercise
+  * Example output: 82.26 Venus years
 
 * The program returns how many years a user has to live in Mars years.
-  * Example input: born February 12, 1985 / female / no smoke / exercise
-  * Example output: 94.752 Mars years
+  * Example input: 33 earth years old / female / no smoke / exercise
+  * Example output: 27.13 Mars years
 
 * The program returns how many years a user has to live in Jupiter years.
-  * Example input: born February 12, 1985 / female / no smoke / exercise
-  * Example output: 597.744 Jupiter years
+  * Example input: 33 earth years old / female / no smoke / exercise
+  * Example output: 4.30 Jupiter years
 
 * If user age exceeds life expectancy, program returns number of Earth years they have lived past life expectancy.
-  * Example input: born February 12, 1885 / female / no smoke / exercise
-  * Example output: 49.6 Earth years past expectancy
-
+  * Example input: 100 Earth years old / female / no smoke / exercise
+  * Example output: 16 Earth years past expectancy
 
 * If user age exceeds life expectancy, program returns number of Mercury years they have lived past life expectancy.
-  * Example input: born February 12, 1885 / female / no smoke / exercise
-  * Example output: 206.66666 Mercury years past expectancy
+  * Example input: 100 Earth years old  / female / no smoke / exercise
+  * Example output: 66.67 Mercury years past expectancy
 
 * If user age exceeds life expectancy, program returns number of Venus years they have lived past life expectancy.
-  * Example input: born February 12, 1885 / female / no smoke / exercise
-  * Example output: 80 Venus years past expectancy
+  * Example input: 100 Earth years old  / female / no smoke / exercise
+  * Example output: 25.81 Venus years past expectancy
 
 * If user age exceeds life expectancy, program returns number of Mars years they have lived past life expectancy.
-  * Example input: born February 12, 1885 / female / no smoke / exercise
-  * Example output: 26.3829787234 Mars years past expectancy
+  * Example input: 100 Earth years old  / female / no smoke / exercise
+  * Example output: 8.51 Mars years past expectancy
 
 * If user age exceeds life expectancy, program returns number of Jupiter years they have lived past life expectancy.
-  * Example input: born February 12, 1885 / female / no smoke / exercise
-  * Example output: 4.1821247892 Jupiter years past expectancy
+  * Example input: 100 Earth years old / female / no smoke / exercise
+  * Example output: 1.35 Jupiter years past expectancy
 
 
 ## Setup on OSX
