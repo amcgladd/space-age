@@ -111,6 +111,14 @@ describe('userInput', function() {
     expect(test.marsOver).toEqual('8.51');
   });
 
+  it('if user age exceeds expectancy, program returns number of jupiter years they have lived past life expectancy', function() {
+    var test = new userInput(100, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.jupiterOver).toEqual('1.35');
+  });
+
 });
 
 
