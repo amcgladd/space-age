@@ -2,9 +2,7 @@
 
 #### Space Age calculator, 5 October, 2018
 
-#### By Your Name Here
-
-By AJ Mcgladdery.
+#### By By AJ Mcgladdery
 
 ## Description
 
@@ -102,10 +100,6 @@ This program calculates a user's age on various neighboring planets. It also ret
 * ESLint
 * Jasmine
 * Karma
-
-## Links
-
-* Add links here
 
 ## License
 
