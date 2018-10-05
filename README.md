@@ -1,12 +1,14 @@
-# Project Title
+# Space Age calculator
 
-#### Epicodus JavaScript exercise, Date
+#### Space Age calculator, 5 October, 2018
 
 #### By Your Name Here
 
+By AJ Mcgladdery.
+
 ## Description
 
-
+This program calculates a user's age on various neighboring planets. It also returns a user's remaining life expectancy based on gender, current age, smoking habits, and exercise. This value is returned for earth years as well as years of neighboring planets. Finally, if user's age exceeds their life expectancy, program returns how much years they have exceed their life expectancy in earth years as well as years of neighboring planets.
 
 ## Specs
 
@@ -84,10 +86,6 @@
 * `npm run start` to build and start the dev server
 * `npm run lint` to explicitly run ESLint
 * `npm run test` to run the unit tests with Karma and Jasmine. Visit `localhost:9876` to view the tests.
-
-## Contribution Requirements
-
-
 
 ## Technologies Used
 
