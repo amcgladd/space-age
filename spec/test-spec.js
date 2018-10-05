@@ -27,11 +27,18 @@ describe('userInput', function() {
     expect(test.venusAge).toEqual('53.23');
   });
 
-  it('should return Venus age', function() {
+  it('should return Mars age', function() {
     var test = new userInput(33);
     test.calculateAges(33);
     expect(test.marsAge).toEqual('17.55');
   });
+
+  it('should return Jupiter age', function() {
+    var test = new userInput(33);
+    test.calculateAges(33);
+    expect(test.jupiterAge).toEqual('2.78');
+  });
+
 
 });
 
