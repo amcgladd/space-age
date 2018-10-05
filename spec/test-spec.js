@@ -119,6 +119,14 @@ describe('userInput', function() {
     expect(test.jupiterOver).toEqual('1.35');
   });
 
+  it('test another case for 33 yr old male', function() {
+    var test = new userInput(33, 'male', true, false);
+    test.calculateAges();
+    test.calculateExpectancy();
+    test.calculateRemaining();
+    expect(test.earthRemain).toEqual(34);
+  });
+
 });
 
 

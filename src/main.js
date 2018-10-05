@@ -67,14 +67,13 @@ userInput.prototype.calculateRemaining = function () {
     this.jupiterOver = this.jupiterConvert(this.earthOver);
   }
   this.earthRemain = this.earthExpect - this.earthAge;
-  this.mercuryRemain = (this.earthRemain / .24).toFixed(2);
-  this.venusRemain = (this.earthRemain / .62).toFixed(2);
-  this.marsRemain = (this.earthRemain / 1.88).toFixed(2);
-  this.jupiterRemain = (this.earthRemain / 11.86).toFixed(2);
+  this.mercuryRemain = this.mercuryConvert(this.earthRemain);
+  this.venusRemain = this.venusConvert(this.earthRemain);
+  this.marsRemain = this.marsConvert(this.earthRemain);
+  this.jupiterRemain = this.jupiterConvert(this.earthRemain);
 }
 
 
 //front end
 $(document).ready(function() {
-
 });
