@@ -76,13 +76,15 @@ userInput.prototype.calculateRemaining = function () {
 
 //front end
 $(document).ready(function() {
-  $("#submit").submit(function(event) {
+  $("#userInput").submit(function(event) {
     event.preventDefault();
-    let userAge = ("#userAge").val();
+    var userAge = parseInt($("#userAge").val());
     console.log(userAge);
-    let testAge = new userInput(userAge,'male',false,false);
+    var testAge = new userInput(userAge,'male',false,true);
     console.log(testAge);
     testAge.calculateAges();
+    testAge.calculateExpectancy();
+    testAge.calculateRemaining();
     $(".output").html(testAge.earthAge);
   });
 });
