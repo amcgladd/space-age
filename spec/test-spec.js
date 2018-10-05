@@ -5,8 +5,14 @@ describe('userInput', function() {
 
   it('should test if userInput is an integer', function() {
     var test = new userInput("apple");
-    test.ageValidate("apple");
-    expect(test.earthAge).toEqual('false');
+    test.calculateEarthAge("apple");
+    expect(test.age).toEqual('false');
+  });
+
+  it('should return age', function() {
+    var test = new userInput(33);
+    test.calculateEarthAge(33);
+    expect(test.earthAge).toEqual(33);
   });
 });
 
