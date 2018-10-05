@@ -49,11 +49,11 @@ userInput.prototype.calculateExpectancy = function () {
     alert("please enter male or female for gender");
   }
 
-  if(this.smoking == true) {
+  if(this.smoking == "true") {
     this.earthExpect -= 5;
   }
 
-  if (this.exercise == true) {
+  if (this.exercise == "true") {
     this.earthExpect += 5;
   }
 };
@@ -80,8 +80,9 @@ $(document).ready(function() {
     event.preventDefault();
     let userAge = parseInt($("#userAge").val());
     let userGender = $("#userGender input:radio:checked").val();
+    let userSmoke = $("#userSmoke input:radio:checked").val();
     console.log(userGender);
-    let testAge = new userInput(userAge,userGender,false,true);
+    let testAge = new userInput(userAge,userGender,userSmoke,true);
     console.log(testAge);
     testAge.calculateAges();
     testAge.calculateExpectancy();
