@@ -23,23 +23,28 @@ describe('userInput', function() {
 
   it('should return Venus age', function() {
     var test = new userInput(33);
-    test.calculateAges(33);
+    test.calculateAges();
     expect(test.venusAge).toEqual('53.23');
   });
 
   it('should return Mars age', function() {
     var test = new userInput(33);
-    test.calculateAges(33);
+    test.calculateAges();
     expect(test.marsAge).toEqual('17.55');
   });
 
   it('should return Jupiter age', function() {
     var test = new userInput(33);
-    test.calculateAges(33);
+    test.calculateAges();
     expect(test.jupiterAge).toEqual('2.78');
   });
 
-
+  it('should return life expectancy in earth years', function() {
+    var test = new userInput(33, 'female', false, true);
+    test.calculateAges();
+    test.calculateExpectancy();
+    expect(test.earthExpect - test.earthAge).toEqual(51);
+  });
 });
 
 
