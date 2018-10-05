@@ -76,6 +76,10 @@ This program calculates a user's age on various neighboring planets. It also ret
   * Example input: 100 Earth years old / female / no smoke / exercise
   * Example output: 1.35 Jupiter years past expectancy
 
+* 17) Additional user story
+  * Example input: 33 year old / male / smoke / no exercise
+  * Example output: 34 earth years remaining
+
 
 ## Setup on OSX
 
